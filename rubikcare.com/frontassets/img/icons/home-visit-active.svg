@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30.656" height="25.331" viewBox="0 0 30.656 25.331">
+    <defs>
+        <style>
+            .cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke:#fff}
+        </style>
+    </defs>
+    <g id="ic_home_visit" transform="translate(0 .5)">
+        <g id="Icons_firstaid">
+            <path id="Path" fill="#1277d1" d="M25.94 21.795H4.716A4.562 4.562 0 0 1 0 17.436V4.359A4.562 4.562 0 0 1 4.716 0H25.94a4.562 4.562 0 0 1 4.716 4.359v13.077a4.562 4.562 0 0 1-4.716 4.359z" transform="translate(0 3.036)"/>
+            <path id="Path-2" fill="none" stroke="#1277d1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M10.219 5.944H0V3.963A4.038 4.038 0 0 1 4.087 0h2.044a4.038 4.038 0 0 1 4.087 3.963z" transform="translate(9.981)"/>
+            <g id="Group_270" transform="translate(10.116 8.999)">
+                <g id="Group_269" transform="translate(2.802 2.802)">
+                    <path id="Path-3" d="M1 0v5.307" class="cls-3" transform="translate(1.654)"/>
+                    <path id="Path-4" d="M0 1h5.307" class="cls-3" transform="translate(0 1.654)"/>
+                </g>
+                <circle id="Oval" cx="5.456" cy="5.456" r="5.456" class="cls-3"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,3019 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from rubikcare.com/Home/MedicineDetails?MedicineId=252 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Sep 2022 13:50:22 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+
+<link rel="stylesheet" href="../frontassets/css/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="../assets/plugins/morris/morris.css">
+<link href="../frontassets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+
+<link href="../frontassets/global/plugins/datatables/datatables.min.css" rel="stylesheet" type="text/css" />
+<link href="../frontassets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../frontassets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+<link href="../frontassets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../frontassets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../frontassets/global/plugins/clockface/css/clockface.css" rel="stylesheet" type="text/css" />
+
+<link href="../frontassets/global/css/components-rtl.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="../frontassets/global/css/plugins-rtl.min.css" rel="stylesheet" type="text/css" />
+
+
+<link href="../frontassets/layouts/layout/css/layout-rtl.min.css" rel="stylesheet" type="text/css" />
+<link href="../frontassets/layouts/layout/css/themes/darkblue-rtl.min.css" rel="stylesheet" type="text/css" id="style_color" />
+<link href="../frontassets/layouts/layout/css/custom-rtl.min.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" href="../frontassets/plugins/fontawesome/css/fontawesome.min.css">
+<link rel="stylesheet" href="../frontassets/plugins/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="stylesheet" href="../frontassets/plugins/select2/css/select2.min.css" />
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.min.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" />
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+
+
+
+<link rel="stylesheet" href="../assets/css/style.css">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#416FD0">
+
+<link rel="stylesheet" href="../frontassets/css/owl.carousel.min.css">
+<link rel="stylesheet" href="../frontassets/css/owl.theme.default.min.css">
+
+<link rel="stylesheet" href="../frontassets/css/style-profile.css">
+<link rel="stylesheet" href="../frontassets/css/style.css">
+<link rel="stylesheet" href="../frontassets/styles.css">
+<link rel="stylesheet" href="../frontassets/enhancement.css">
+<link rel="stylesheet" href="../frontassets/responsive-en.css">
+<link href="../frontassets/global/plugins/bootstrap-toastr/toastr-rtl.min.css" rel="stylesheet" />
+<link href="../frontassets/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet" />
+<style>
+        .disable-click {
+            pointer-events: none;
+        }
+        .qr-code {
+            max-width: 200px;
+            margin: 10px;
+        }
+
+        .holder {
+            width: 280px;
+            position: relative;
+            margin: 30px auto;
+        }
+
+        #query {
+            padding: 15px;
+            width: 280px;
+            background: #eee;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            color: #888;
+            font-size: 13px;
+            margin-top: 30px;
+        }
+
+            #query a {
+                text-decoration: none;
+                color: blue;
+            }
+
+        #barcodenum {
+        }
+
+        .instructions {
+            color: #333;
+        }
+
+        #upc-a {
+            background: #eee;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 285px;
+            padding: 13px;
+        }
+
+        #upc-wrap {
+            width: 285px; /* 95 *3 */
+            height: 186px; /* 62 *3 */
+        }
+
+        .m { /* module 1px *3 width */
+            width: 3px;
+            height: 179px; /* 186 / 244 * 235 = 179px */
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .long {
+            height: 186px;
+        }
+
+        .o {
+            background-color: #fff;
+        }
+
+        .e {
+            background-color: #000;
+        }
+
+        .l {
+            display: inline-block;
+        }
+
+        .r {
+            display: inline-block;
+        }
+
+            .r .o.m {
+                background-color: #000;
+            }
+
+            .r .e.m {
+                background-color: #fff;
+            }
+
+        #l1, #l2, #l3, #l4, #l5, #l6 {
+            display: inline-block;
+        }
+
+        #r1, #r2, #r3, #r4, #r5, #r6 {
+            display: inline-block;
+        }
+
+        .digits {
+            font-family: monospace, Courier;
+            font-size: 2em;
+            display: inline;
+            position: relative;
+            top: -10px;
+            letter-spacing: 3px;
+        }
+
+        #l-digits {
+            margin-left: 20px;
+        }
+
+        #r-digits {
+            margin-left: 24px;
+        }
+
+        #red-strike {
+            width: 301px;
+            height: 3px;
+            background-color: red;
+            position: absolute;
+            margin: 100px 30px 0 22px;
+        }
+        .select2-container{width:100%!important;}
+    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name="google-signin-client_id">
+<title>MedicineDetails </title>
+
+<link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+<style>
+        .card-text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="doctors-area">
+
+<div class="main-wrapper">
+
+<header class="header">
+<nav class="navbar navbar-expand-lg header-nav">
+<div class="navbar-header">
+<div>
+<a href="javascript:void(0);" id="mobile-icon" class="s-mobile">
+<i class="fas fa-align-left"></i>
+</a>
+</div>
+<a href="../index.html" class="navbar-brand logo">
+<img src="../frontassets/img/logo.svg" class="img-fluid" alt="Logo">
+</a>
+</div>
+<div class="main-menu-wrapper">
+<div class="menu-header">
+<a href="../index.html" class="menu-logo navbar-brand logo">
+<img src="../frontassets/img/logo.svg" class="img-fluid" alt="Logo">
+</a>
+<a id="menu_close" class="menu-close" href="javascript:void(0);">
+<i class="fas fa-times"></i>
+</a>
+</div>
+<ul class="main-nav">
+<li class="">
+<a href="../index.html">Home</a>
+</li>
+<li>
+<a href="PatientPharmacyHome.html">
+Pharmacy
+</a>
+</li>
+<li>
+<a href="BlogList.html">
+Rubikcare Blog
+</a>
+</li>
+<li>
+<a href="../patient/Loginf603.html">
+<span>Live</span>
+</a>
+</li>
+</ul>
+</div>
+<ul class="nav user-menu doc-layout">
+<li class="nav-item" style="margin-top:15px;">
+<select class="selectpicker" data-width="fit" style="display:inline-block;float:left;" onchange="LangChange(this);">
+<option value="en" selected="selected" data-content='<span class="flag-icon flag-icon-us"></span> En'>En </option>
+<option value="ar-EG" data-content='<span class="flag-icon flag-icon-eg"></span> Ar'>Ar</option>
+</select>
+</li>
+<li class="nav-item">
+<div class="nav-cart">
+<a href="MyCart.html" class="cart"> <i class="fas fa-shopping-cart"></i> <span class='counter' id="CartItemCount">0</span></a>
+</div>
+</li>
+
+<li class="nav-item dropdown has-arrow">
+<a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+Login
+</a>
+<div class="dropdown-menu">
+<div class="user-header">
+<div class="login login-sm">
+<a href="../patient/Login.html" class="btn btn-login">
+<i class="fas fa-user-injured"></i> Patient
+</a>
+<a class="btn btn-login" href="../doctor/login.html"><i class="fas fa-user-md"></i> Doctors</a>
+<a class="btn btn-login" href="../Pharmaceutical/login.html"><i class="fas fa-notes-medical"></i> Rep</a>
+<a class="btn btn-login" href="../Pharmacy/Login.html"><i class="fas fa-pills"></i> Pharmacy</a>
+<a class="btn btn-login" href="../OtherProvider/Login.html"><i class="fas fa-pills"></i> Other Provider</a>
+</div>
+</div>
+</div>
+</li>
+
+</ul>
+</nav>
+</header>
+
+<div class="breadcrumb-bar bar-pharama">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-md-12 col-12">
+<nav aria-label="breadcrumb" class="page-breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+<li class="breadcrumb-item active">Find Medication</li>
+<li class="breadcrumb-item active" aria-current="page">
+Medicin Details
+</li>
+</ol>
+</nav>
+<h2 class="breadcrumb-title">
+oxifree
+</h2>
+</div>
+</div>
+</div>
+</div>
+
+<section class="all-prescription prescription" style="background:#f8f9fa !important;">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-md-8 col-xs-12">
+<div class="card card-prescription" style="background: #fff !important;">
+<div class="card-body">
+<div class="doctor-widget">
+<div class="doc-info-left">
+<div class="doctor-img doc-prescription medecin-img">
+<img src="../../api.rubikcare.com/Upload/reduced_20220519135975269671617282554xoifree%20arabica.jpg" class="img-fluid" alt="User Image">
+</div>
+<div class="doc-info-cont">
+<h4 class="doc-name" style="color:#15558d !important;font-weight:bold;">oxifree</h4>
+<p class="doc-speciality pre-dose">Tablets -5</p>
+<p class="doc-speciality pre-dose" style="color:#15558d !important;"><b>Price : 90.00 EGP</b></p>
+<p class="doc-speciality pre-dose" style="color:#15558d !important;">Medicine</p>
+</div>
+</div>
+<div class="doc-info-right">
+<div class="clinic-booking">
+<a class="btn view-btn" style="width: auto !important;padding:7px 35px;" href="#">
+<i class="fas fa-shopping-bag"></i> Buy Now
+</a>
+<a class="apt-btn btn-accept" style="width: auto !important;padding:7px 35px;" href="#">
+<i class="fas fa-cart-plus"></i> Cart
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-8 col-xs-12">
+<div class="panel-group accordion medecin-des" id="accordion1">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion1" href="#collapse_1"> Description </a>
+</h4>
+</div>
+<div id="collapse_1" class="panel-collapse show">
+<div class="panel-body">
+<p> ksdfshafgjldhfgda </p>
+</div>
+</div>
+</div>
+</div>
+<div class="panel-group accordion medecin-des" id="accordion2">
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse_2"> Active Ingredient </a>
+</h4>
+</div>
+<div id="collapse_2" class="panel-collapse show">
+<div class="panel-body" style="height:200px; overflow-y:auto;">
+<p> dkjbfdkshbfjlhgfjdshdf</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer id="careplus-footer" class="careplus-footer-one">
+<span class="careplus-footer-transparent"></span>
+
+<div class="careplus-footer-widget">
+<div class="container">
+<div class="row">
+
+<aside class="col-md-4 widget widget_contact_info">
+<div>
+<a href="../index.html" class="footer-logo">
+<img src="../frontassets/img/footer-logo.png" alt="">
+</a>
+</div>
+<p>
+You can contact us , we also welcome inquiries and suggestions on the mail or unified number ,and service representatives will reply to you quickly
+</p>
+<ul>
+<li>
+<h6>Call Us At :</h6>
+<span>3333 326 100 (20&#x2B;) - 3333 326 100 (20&#x2B;)</span>
+</li>
+<li>
+<h6>Mail Us At :</h6>
+<a href="javascript:;"><span class="__cf_email__" data-cfemail="b5dcdbd3daf5c7c0d7dcded6d4c7d09bd6dad8">[email&#160;protected]</span></a>
+</li>
+<li>
+<h6>Our Location :</h6>
+<span>Villa # 178, 2nd District, 1st Zone, 5th Settlement, New Cairo, Egypt</span>
+</li>
+</ul>
+</aside>
+
+
+<aside class="col-md-4 widget widget_useful_link">
+<h2 class="careplus-footer-title">Need Help?</h2>
+<ul>
+<li>
+<a href="About.html">About Us</a>
+</li>
+<li>
+<a href="ContactUs.html">Contact Us</a>
+</li>
+<li>
+<a href="termsOfUse.html">Terms Of Use</a>
+</li>
+<li>
+<a href="PrivacyPolicy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="DoctorPolicy.html">Doctor Privacy Policy</a>
+</li>
+<li>
+<a href="helpsupport.html">FAQ</a>
+</li>
+<li>
+<a href="PharmacyPolicy.html">Pharmacy Privacy Policy</a>
+</li>
+<li>
+<a href="PharmaPolicy.html">Rep Privacy Policy</a>
+</li>
+</ul>
+</aside>
+
+
+<aside class="col-md-4 widget widget_newsletter">
+<h2 class="careplus-footer-title">Our Newsletter</h2>
+<p>Subscribe to receive all news about us</p>
+<form id="Subscribeform" action="https://rubikcare.com/Home/Subscribe" method="post">
+<ul>
+<li>
+<input required placeholder="Name" type="text" name="name">
+</li>
+<li>
+<input required placeholder="Email" type="email" name="email">
+</li>
+<li>
+<label>
+<input id="Subscribeformbtn" type="button" onclick="Subscribefunction();" value="Subscribe">
+<span></span>
+</label>
+</li>
+</ul>
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8NPq8OQ0KOBEvotX6KsrzdQuJLez09D_Fdtp6X2_kVVPhCvIGZjT_TneNtCL4gA4aJciTfAjGdZHwXUo_o53R-GElCb-joef451ldHRlgydcJ66UcfR_IW8cUWAAn34zMjzsT_d4BfMglIMM30XshXk" /></form>
+</aside>
+</div>
+</div>
+</div>
+
+
+<div class="careplus-copyright">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<p>
+<i class="fa fa-copyright"></i>
+<span id="y"></span>, All Right Reserved - powered by
+<a href="http://www.ekadsoft.com/" target="_blank">EkadSoft</a>
+</p>
+<a href="#" class="careplus-back-top">
+<i class="fa fa-angle-up"></i>
+</a>
+<ul class="careplus-footer-social">
+<li>
+<a href="https://www.facebook.com/Rubikcare" class="fa fa-facebook-square" target="_blank"></a>
+</li>
+<li>
+<a href="https://twitter.com/?lang=en" class="fa fa-twitter-square" target="_blank"></a>
+</li>
+<li>
+<a href="https://pk.linkedin.com/" class="fa fa-linkedin-square" target="_blank"></a>
+</li>
+<li>
+<a href="https://plus.google.com/" class="fa fa-google-plus-square" target="_blank"></a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</footer>
+
+</div>
+<div class="modal fade" id="delete_modal" aria-hidden="true" role="dialog">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+
+<div class="modal-body">
+<div class="form-content p-2">
+<h4 class="modal-title">Delete</h4>
+<p class="mb-4">Are you sure want to delete?</p>
+<input name="delete_id" id="delete_id" type="hidden" />
+<button type="button" class="btn btn-primary" onclick="Delete()">Delete </button>
+<button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade " id="preview-image">
+<div class="modal-dialog modal-dialog-centered modal-add-post">
+<img class="img-fluid" alt="User Image" src="../../e4clinicpilotapi.ekadsoft.org/Upload/reduced_20220316223918321961okrmpylpjofile.png">
+<div class="modal-content">
+</div>
+</div>
+</div>
+
+<div class="modal fade " id="add_new_post">
+<div class="modal-dialog modal-dialog-centered modal-add-post" id="postcontainer">
+<div class="modal-content" id="createpostcontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Create Post</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="clubpostform">
+<div cladd="row">
+<div class="card-body">
+<div class="d-flex justify-content-start align-items-center">
+<div class="avatar mr-1">
+<img src="#" alt="avatar img" height="50" width="50">
+</div>
+<div class="profile-user-info">
+<h6 class="mb-0">
+</h6>
+<small class="text-muted">
+<button type="button" id="postseenstatus" class="btn btn-privacy" data-postavailabefor="1" onclick="PostChangeContent(2)">Live <i class="fas fa-sort-down"></i></button>
+</small>
+</div>
+</div>
+<div>
+<textarea class="form-control text-area-post" id="PostText" placeholder="Waiting for your advise" rows="8"></textarea>
+</div>
+<div>
+</div>
+<div class="upload__box row">
+<div id="imagespreview" class="col-12 upload__img-wrap"></div>
+<div class="col-12 upload__btn-box row">
+<div class="col-8">
+<label class="upload__btn btn-add-media">
+<p> <i class="fas fa-image"></i> Add Photo/Video </p>
+<input type="file" multiple="" id="postuploadfiles" data-max_length="20" accept="video/*,image/*" class="upload__inputfile" onchange="UploadFiles()" />
+<input type="file" multiple="" id="postuploadvideos" data-max_length="20" accept="video/*,image/*" style="display:none" />
+</label>
+</div>
+<div class="col-4">
+<button type="button" class="btn btn-post-add " onclick="FnSavePostlocal()" style="width:100%;">
+<p>Post</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-content" id="audiencecontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="PostChangeContent(1)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Select Audience</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="fm2">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Who can see your post</h4>
+<p style="color: #8d8b8b;">
+Your post appears in the News Feed on your profile in the search results
+</p>
+<div class="form-group mb-0">
+<div id="pricing_select" class="select-see">
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudienceclub" name="selectaudience" onclick="PostChangeContent(11)" class="custom-control-input" value="price_free" checked="" />
+<label class="custom-control-label" id="audience11" for="selecaudienceclub">Live</label>
+<p style="color: #8d8b8b;">
+Any one can sea your post
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudiencefollower" name="selectaudience" onclick="PostChangeContent(12)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience12" for="selecaudiencefollower">Followers</label>
+<p style="color: #8d8b8b;">
+Your followers can sea your post
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudiencespecificfollower" name="selectaudience" onclick="PostChangeContent(3)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience3" for="selecaudiencespecificfollower">Specific Followers</label>
+<p style="color: #8d8b8b;">
+Select your followers
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudiencespecifictype" name="selectaudience" onclick="PostChangeContent(4)" value="custom_price" class="custom-control-input" />
+ <label class="custom-control-label" id="audience4" for="selecaudiencespecifictype">Specific Type</label>
+<p style="color: #8d8b8b;">
+Select your type of followers
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudienceonlyme" name="selectaudience" onclick="PostChangeContent(5)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience5" for="selecaudienceonlyme">Only me</label>
+<p style="color: #8d8b8b;">
+Only me
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="PostChangeContent(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-content" id="specificfollowercontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="PostChangeContent(2)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Specific Followers</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<div class="form-horizontal needs-validation" id="fm3">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<div class="form-group has-search mb-4">
+<span class="fa fa-search form-control-feedback"></span>
+<input type="text" class="form-control" id="Searchkey" autocomplete="off" onkeyup="Searchfollower(this)" placeholder="Search">
+</div>
+<div class="form-group mb-0" id="specificfollowerlist">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="PostChangeContent(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-content" id="specifictypecontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="PostChangeContent(2)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Specific Type</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="fm4">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<p style="color: #8d8b8b;">
+</p>
+<div class="form-group mb-0">
+<div id="pricing_select" class="select-see">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypeuser" name="selectspecifictype" class="custom-control-input" value="1">
+<label class="custom-control-label" for="specifictypeuser">User</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypedoctor" name="selectspecifictype" value="2" class="custom-control-input">
+<label class="custom-control-label" for="specifictypedoctor">Doctor</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypespecificassistant" name="selectspecifictype" value="3" class="custom-control-input">
+<label class="custom-control-label" for="specifictypespecificassistant">Assistants</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypespecificrep" name="selectspecifictype" value="4" class="custom-control-input">
+<label class="custom-control-label" for="specifictypespecificrep">Pharmaceutical Rep</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypepharmacy" name="selectspecifictype" value="5" class="custom-control-input">
+<label class="custom-control-label" for="specifictypepharmacy">Pharmacy</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="PostChangeContent(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade " id="add_new_post_share">
+<div class="modal-dialog modal-dialog-centered modal-add-post_share" id="postcontainer_share">
+<div class="modal-content" id="createpostcontent_share" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Share Post</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="clubpostform_share">
+<div cladd="row">
+<div class="card-body">
+<div class="d-flex justify-content-start align-items-center">
+<div class="avatar mr-1">
+<img src="#" alt="avatar img" height="50" width="50">
+</div>
+<div class="profile-user-info">
+<h6 class="mb-0">
+</h6>
+<small class="text-muted">
+<button type="button" id="postseenstatus_share" class="btn btn-privacy" data-postavailabefor="1" onclick="PostChangeContent_share(2)">Live <i class="fas fa-sort-down"></i></button>
+</small>
+</div>
+</div>
+<div>
+<textarea class="form-control text-area-post" id="PostText_share" placeholder="Waiting for your advise" rows="4"></textarea>
+</div>
+<div class="upload__box row">
+<div id="shareimagespreview" class="col-12 upload__img-wrap" style="pointer-events:none;border: groove;display:inline-block;"></div>
+<br />
+<div class="col-12 upload__btn-box row">
+<div class="col-8">
+</div>
+<div class="col-4">
+<button type="button" class="btn btn-post-add " onclick="FnSavePost_share()" style="width:100%;">
+<p>Share</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-content" id="audiencecontent_share" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="PostChangeContent_share(1)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Select Audience</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="fm2_share">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Who can see your post</h4>
+<p style="color: #8d8b8b;">
+Your post appears in the News Feed on your profile in the search results
+</p>
+<div class="form-group mb-0">
+<div id="pricing_select" class="select-see">
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudienceclub_share" name="selectaudience_share" onclick="PostChangeContent_share(11)" class="custom-control-input" value="price_free" checked="" />
+<label class="custom-control-label" id="audience11_share" for="selecaudienceclub_share">Live</label>
+<p style="color: #8d8b8b;">
+Any one can sea your post
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudiencefollower_share" name="selectaudience_share" onclick="PostChangeContent_share(12)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience12_share" for="selecaudiencefollower_share">Followers</label>
+<p style="color: #8d8b8b;">
+Your followers can sea your post
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudiencespecificfollower_share" name="selectaudience_share" onclick="PostChangeContent_share(3)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience3_share" for="selecaudiencespecificfollower_share">Specific Followers</label>
+<p style="color: #8d8b8b;">
+Select your followers
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudiencespecifictype_share" name="selectaudience_share" onclick="PostChangeContent_share(4)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience4_share" for="selecaudiencespecifictype_share">Specific Type</label>
+<p style="color: #8d8b8b;">
+Select your type of followers
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="selecaudienceonlyme_share" name="selectaudience_share" onclick="PostChangeContent_share(5)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="audience5_share" for="selecaudienceonlyme_share">Only me</label>
+<p style="color: #8d8b8b;">
+Only me
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="PostChangeContent_share(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-content" id="specificfollowercontent_share" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="PostChangeContent_share(2)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Specific Followers</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<div class="form-horizontal needs-validation" id="fm3_share">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<div class="form-group has-search mb-4">
+<span class="fa fa-search form-control-feedback"></span>
+<input type="text" class="form-control" id="Searchkey_share" autocomplete="off" onkeyup="Searchfollower_share(this)" placeholder="Search">
+</div>
+<div class="form-group mb-0" id="specificfollowerlist_share">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="PostChangeContent_share(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-content" id="specifictypecontent_share" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="PostChangeContent_share(2)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Specific Type</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="fm4_share">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<p style="color: #8d8b8b;">
+</p>
+<div class="form-group mb-0">
+<div id="pricing_select" class="select-see">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypeuser_share" name="selectspecifictype_share" class="custom-control-input" value="1">
+<label class="custom-control-label" for="specifictypeuser_share">User</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypedoctor_share" name="selectspecifictype_share" value="2" class="custom-control-input">
+<label class="custom-control-label" for="specifictypedoctor_share">Doctor</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypespecificassistant_share" name="selectspecifictype_share" value="3" class="custom-control-input">
+<label class="custom-control-label" for="specifictypespecificassistant_share">Assistants</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypespecificrep_share" name="selectspecifictype_share" value="4" class="custom-control-input">
+<label class="custom-control-label" for="specifictypespecificrep_share">Pharmaceutical Rep</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="specifictypepharmacy_share" name="selectspecifictype_share" value="5" class="custom-control-input">
+<label class="custom-control-label" for="specifictypepharmacy_share">Pharmacy</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="PostChangeContent_share(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade " id="new-consultation-doctor-profile">
+<div class="modal-dialog modal-dialog-centered modal-add-message">
+<div class="modal-content">
+<div class="modal-header">
+<div class="row  ">
+<div class="col-3">
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">New Message</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation">
+<div class="row form-row hours-cont">
+<div class="col-12 col-md-12">
+<div class="row form-row">
+<div class="col-12 ">
+<div class="form-group">
+<label>Payment</label>
+<div class="payment-list payment-way">
+<label class="payment-radio credit-card-option">
+<input type="radio" name="TextPaiedType" checked="" value="1">
+<span class="checkmark"></span>
+Wallet
+</label>
+<label class="payment-radio credit-card-option">
+<input type="radio" name="TextPaiedType" value="2">
+<span class="checkmark"></span>
+Rubika
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div cladd="row">
+<div class="card-body">
+<div>
+<textarea class="form-control text-area-post" id="doctorprofilePostText" placeholder="Waiting for your advise" rows="8"></textarea>
+</div>
+<div>
+</div>
+<div class="upload__box row">
+<div id="imagespreview" class="col-12 upload__img-wrap"></div>
+<div class="col-12 upload__btn-box row">
+<div class="col-8">
+<label class="upload__btn btn-add-media">
+<p> <i class="fas fa-image"></i>Add Photo/Video/pdf </p>
+<input type="file" multiple="" id="textpostuploadfiles" data-max_length="20" accept="application/pdf,image/*" class="upload__inputfile" onchange="UploadFilestext()">
+</label>
+</div>
+<div class="col-4 upload__btn-box ">
+<button type="button" class="btn btn-post-add " id="btnsavetextconsul" onclick="FnSavetextconsultation()" style="width:100%;">
+<p>Send</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="filter-labs" role="dialog" aria-modal="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title"> Filter </h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation">
+<div class="col-12">
+<div class="form-group">
+<div class="col-md-12">
+<div class="mt-radio-list">
+<label class="mt-radio mt-radio-outline">
+ <input type="radio" name="optionsRadios" id="optionsRadios22" value="1"> Hightest Discount
+<span></span>
+</label>
+<label class="mt-radio mt-radio-outline">
+<input type="radio" name="optionsRadios" id="optionsRadios23" value="2"> Lowest Discount
+<span></span>
+</label>
+<label class="mt-radio mt-radio-outline">
+<input type="radio" name="optionsRadios" id="optionsRadios23" value="3"> Price Low To Heigh
+<span></span>
+</label>
+<label class="mt-radio mt-radio-outline">
+<input type="radio" name="optionsRadios" id="optionsRadios23" value="4"> Price Heigh To Low
+<span></span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="form-actions right1 ">
+<button type="button" id="btnFilterLabs" class="col-6 btn default btn-block">Done</button>
+<button type="button" id="btnresetLabs" class="col-6 btn btn-primary btn-block">Reset</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade " id="edit_post">
+<div class="modal-dialog modal-dialog-centered modal-add-post" id="edit_postcontainer">
+<div class="modal-content" id="edit_createpostcontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Edit Post</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="edit_clubpostform">
+<div cladd="row">
+<div class="card-body">
+<div class="d-flex justify-content-start align-items-center">
+<div class="avatar mr-1">
+<img src="#" alt="avatar img" height="50" width="50">
+</div>
+<div class="profile-user-info">
+<h6 class="mb-0">
+</h6>
+<small class="text-muted">
+<button type="button" id="edit_postseenstatus" class="btn btn-privacy" data-postavailabefor="1" onclick="edit_PostChangeContent(2)">Live <i class="fas fa-sort-down"></i></button>
+</small>
+</div>
+</div>
+<div>
+<textarea class="form-control text-area-post" id="edit_PostText" placeholder="Waiting for your advise" rows="8"></textarea>
+</div>
+<div>
+</div>
+<div class="upload__box row">
+<div id="edit_imagespreview" class="col-12 upload__img-wrap"></div>
+<div class="col-12 upload__btn-box row">
+<div class="col-8">
+<label class="upload__btn btn-add-media">
+<p> <i class="fas fa-image"></i> Add Photo/Video </p>
+ <input type="file" multiple="" id="edit_postuploadfiles" data-max_length="20" accept="video/*,image/*" class="upload__inputfile" onchange="edit_UploadFiles()" />
+<input type="file" multiple="" id="edit_postuploadvideos" data-max_length="20" accept="video/*,image/*" style="display:none" />
+</label>
+</div>
+<div class="col-4">
+<button type="button" class="btn btn-post-add " onclick="edit_FnSavePostlocal()" style="width:100%;">
+<p>Edit</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-content" id="edit_audiencecontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="edit_PostChangeContent(1)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Select Audience</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">×</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="edit_fm2">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Who can see your post</h4>
+<p style="color: #8d8b8b;">
+Your post appears in the News Feed on your profile in the search results
+</p>
+<div class="form-group mb-0">
+<div id="pricing_select" class="select-see">
+<div class="custom-control custom-radio">
+<input type="radio" id="edit_selecaudienceclub" name="edit_selectaudience" onclick="edit_PostChangeContent(11)" class="custom-control-input" value="price_free" checked="" />
+<label class="custom-control-label" id="edit_audience11" for="edit_selecaudienceclub">Live</label>
+<p style="color: #8d8b8b;">
+Any one can sea your post
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="edit_selecaudiencefollower" name="edit_selectaudience" onclick="edit_PostChangeContent(12)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="edit_audience12" for="edit_selecaudiencefollower">Followers</label>
+<p style="color: #8d8b8b;">
+Your followers can sea your post
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="edit_selecaudiencespecificfollower" name="edit_selectaudience" onclick="edit_PostChangeContent(3)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="edit_audience3" for="edit_selecaudiencespecificfollower">Specific Followers</label>
+<p style="color: #8d8b8b;">
+Select your followers
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="edit_selecaudiencespecifictype" name="edit_selectaudience" onclick="edit_PostChangeContent(4)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="edit_audience4" for="edit_selecaudiencespecifictype">Specific Type</label>
+<p style="color: #8d8b8b;">
+Select your type of followers
+</p>
+</div>
+<div class="custom-control custom-radio">
+<input type="radio" id="edit_selecaudienceonlyme" name="edit_selectaudience" onclick="edit_PostChangeContent(5)" value="custom_price" class="custom-control-input" />
+<label class="custom-control-label" id="edit_audience5" for="edit_selecaudienceonlyme">Only me</label>
+<p style="color: #8d8b8b;">
+Only me
+</p>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="edit_PostChangeContent(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<div class="modal-content" id="edit_specificfollowercontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="edit_PostChangeContent(2)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Specific Followers</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<div class="form-horizontal needs-validation" id="edit_fm3">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<div class="form-group has-search mb-4">
+<span class="fa fa-search form-control-feedback"></span>
+<input type="text" class="form-control" id="edit_Searchkey" autocomplete="off" onkeyup="edit_Searchfollower(this)" placeholder="Search">
+</div>
+<div class="form-group mb-0" id="edit_specificfollowerlist">
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="edit_PostChangeContent(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal-content" id="edit_specifictypecontent" style="display:none">
+<div class="modal-header">
+<div class="row ">
+<div class="col-3">
+<button onclick="edit_PostChangeContent(2)">
+<i class="fas fa-arrow-left"></i>
+</button>
+</div>
+<div class="col-6">
+<h5 class="modal-title text-center" style="color: #1277d1;">Specific Type</h5>
+</div>
+<div class="col-3">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+</div>
+</div>
+<div class="modal-body">
+<form class="form-horizontal needs-validation" id="edit_fm4">
+<div cladd="row">
+<div class="card">
+<div class="card-body">
+<p style="color: #8d8b8b;">
+</p>
+<div class="form-group mb-0">
+<div id="pricing_select" class="select-see">
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="edit_specifictypeuser" name="edit_selectspecifictype" class="custom-control-input" value="1">
+<label class="custom-control-label" for="edit_specifictypeuser">User</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="edit_specifictypedoctor" name="edit_selectspecifictype" value="2" class="custom-control-input">
+<label class="custom-control-label" for="edit_specifictypedoctor">Doctor</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="edit_specifictypespecificassistant" name="edit_selectspecifictype" value="3" class="custom-control-input">
+<label class="custom-control-label" for="edit_specifictypespecificassistant_share">Assistants</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="edit_specifictypespecificrep" name="edit_selectspecifictype" value="4" class="custom-control-input">
+<label class="custom-control-label" for="edit_specifictypespecificrep">Pharmaceutical Rep</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+<div class="custom-control custom-checkbox">
+<input type="checkbox" id="edit_specifictypepharmacy" name="edit_selectspecifictype" value="5" class="custom-control-input">
+<label class="custom-control-label" for="edit_specifictypepharmacy">Pharmacy</label>
+<p style="color: #8d8b8b;">
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-4"></div>
+<div class="col-sm-4 d-flex justify-content-between justify-content-sm-center align-items-center">
+<button type="button" onclick="edit_PostChangeContent(1)" class="btn btn-post-add " style="width:100%;">
+<p>Done</p>
+</button>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="book-service-lab" aria-hidden="true" role="dialog">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title">Book Service </h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="FinshOrder()">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<form>
+<div class="row form-row">
+<div class="col-12 col-md-12">
+<img src="../frontassets/img/ic_success.png" style="width:50px;display:block;margin:20px auto;" />
+<h4 class="text-center" style="color: #6b6b6b;">
+Your Discount created successful
+<span id="ByDoctorContainner" style="display:none">
+By
+<span id="ByDoctor"></span>
+</span>
+</h4>
+<hr />
+</div>
+<div class="col-md-12">
+<div class="text-center">
+<img id="QRCodeImage" src="#" class="qr-code img-thumbnail img-responsive">
+</div>
+<h4 class="text-center" style="color: #6b6b6b;">
+Your booking QR Code
+</h4>
+<hr />
+</div>
+<div class="col-md-12">
+<div class="text-center">
+<img id="BarCodeImage" src="#" class="img-thumbnail img-responsive">
+</div>
+<h4 class="text-center" style="color: #6b6b6b;">
+Your booking Barcode
+</h4>
+</div>
+<div class="col-md-12">
+<div class="form-actions right1 submit-section text-center">
+<button type="button" class="btn blue" style="display:block;margin:0 auto;" onclick="FinshOrder()">
+Done
+</button>
+</div>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../frontassets/global/plugins/jquery.min.js" type="text/javascript"></script>
+<script src="../frontassets/js/popper.min.js"></script>
+<script src="../frontassets/js/bootstrap.min.js"></script>
+<script src="../frontassets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+
+
+<script src="../frontassets/global/scripts/datatable.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/datatables/datatables.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/datatables/plugins/bootstrap/datatables.bootstrap.js" type="text/javascript"></script>
+
+
+<script src="../frontassets/global/plugins/moment.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script>
+
+
+<script src="../frontassets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
+<script src="../frontassets/global/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js" type="text/javascript"></script>
+
+<script src="../frontassets/global/scripts/app.min.js" type="text/javascript"></script>
+<script src="../frontassets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script>
+
+
+<script src="../frontassets/pages/scripts/table-datatables-managed.min.js" type="text/javascript"></script>
+
+<script src="../frontassets/plugins/fancybox/jquery.fancybox.min.js"></script>
+
+<script src="../frontassets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="../frontassets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script>
+<script src="../frontassets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="../frontassets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+
+<script src="../frontassets/js/slick.js"></script>
+
+<script src="../frontassets/plugins/select2/js/select2.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+<script src="../../dimsemenov.com/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../assets/plugins/raphael/raphael.min.js"></script>
+<script src="../assets/plugins/morris/morris.min.js"></script>
+<script src="../frontassets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+<script src="../frontassets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+<script src="../frontassets/js/rangeslider.js"></script>
+<script src="../assets/js/script.js"></script>
+<script src="../frontassets/global/plugins/bootstrap-toastr/toastr.min.js"></script>
+<script src="../frontassets/pages/scripts/ui-toastr.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<script src="../frontassets/js/script.js"></script>
+
+<script>
+        function CopyLink(inputid) {
+            /* Get the text field */
+            var copyText = document.getElementById(inputid);
+
+            /* Select the text field */
+            copyText.select();
+            //copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+            /* Copy the text inside the text field */
+            navigator.clipboard.writeText(copyText.value);
+            notifysuccess("", "Link Copied Successfully");
+            /* Alert the copied text */
+            //alert("Copied the text: " + copyText.value);
+        }
+        window.addEventListener("pageshow", function (event) {
+            var historyTraversal = event.persisted ||
+                (typeof window.performance != "undefined" &&
+                    window.performance.navigation.type === 2);
+            if (historyTraversal) {
+                //this.alert('back');
+                // Handle page restore.
+                window.location.reload();
+            }
+        });
+        var btn = $('.careplus-back-top');
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '300');
+        });
+        function UploadFilestext() {
+            var count = jQuery('#textpostuploadfiles')[0].files.length;
+            alert('Number File = ' + count);
+        };
+        function FnSavetextconsultation() {
+            $("#btnsavetextconsul").prop('disabled', false);
+            $("#btnsavetextconsul").addClass("disable-click");
+            if ($("#doctorprofilePostText").val() == '') {
+                notifyerror("", "Waiting for your advise");
+                $("#btnsavetextconsul").prop('disabled', false);
+                $("#btnsavetextconsul").removeClass("disable-click");
+                return;
+            }
+
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+            var uploadfiles = new FormData();
+            jQuery.each(jQuery('#textpostuploadfiles')[0].files, function (i, file) {
+                uploadfiles.append("textpostuploadfiles", file);
+            });
+            $.ajax({
+                method: "post",
+                contentType: false,
+                processData: false,
+                data: uploadfiles,
+                url: "/Doctor/UploadMultipleAttachApi",
+                success: function (res) {
+                    var allFiles = [];
+                    var resData = res;
+                    var Images = resData;
+                    var Files = Images.split("--");
+                    Files.forEach(function (value, index, array) {
+                        if (value != '') {
+                            allFiles.push(value);
+                        }
+                    });
+                    var TextBooking = $("#doctorprofilePostText").val();
+                    var MainDoctorID = $("#doctorprofileMainDoctorID").val();
+                    //var Files = [];
+                    var data = {
+                        DoctorFk: MainDoctorID,
+                        TextBooking: TextBooking,
+                        AttachedFilePath: allFiles,
+                        PaymentType: $('input[name="TextPaiedType"]:checked').val()
+                    };
+                    $.ajax({
+                        cash: false,
+                        method: "post",
+                        url: "/Patient/AddNewTextBooking",
+                        data: data,
+                        success: function (result) {
+                            debugger;
+                            if (result == "saved successfully") {
+                                notifysuccess("", result);
+                                $("#doctorprofilePostText").val("");
+                                $('#new-consultation-doctor-profile').modal('toggle');
+                            } else {
+                                notifyerror("Error Occured", result);
+                                $("#btnsavetextconsul").prop('disabled', false);
+                            $("#btnsavetextconsul").removeClass("disable-click");
+                            }
+
+                        }, error: function () {
+                            notifyerror("Error Occured", "");
+                            $("#btnsavetextconsul").prop('disabled', false);
+                            $("#btnsavetextconsul").removeClass("disable-click");
+                        }
+                    });
+                }, error: function () {
+                    notifyerror("", "Error Occured");
+                    $("#btnsavetextconsul").prop('disabled', false);
+                    $("#btnsavetextconsul").removeClass("disable-click");
+                }
+            });
+        };
+    </script>
+<script>
+        var dataimg = new FormData();
+        var datavideo = new FormData();
+
+        function UploadFiles() {
+            jQuery.each(jQuery('#postuploadfiles')[0].files, function (i, file) {
+                if (!file.type.match('image.*')) {
+                    if (file.type.match('video.*')) {
+                        //datavideo.append("postuploadvideos", file);
+                        dataimg.append("postuploadfiles", file);
+                    }
+                    else {
+                        return;
+                    }
+                }
+                else {
+                    dataimg.append("postuploadfiles", file);
+                }
+            });
+        }
+        function FnSavePostlocal() {
+            if ($("#PostText").val() == '' || $("#PostText").val().replace(/^\s+|\s+$/g, "").length == 0) {
+                    notifyerror("Waiting for your advise", "");
+                return;
+            }
+            $('#add_new_post').modal('toggle');
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+            var Files = [];
+            Files.length = 0;
+            debugger;
+            uploadimages(dataimg, Files);
+
+            debugger;
+
+        }
+        function FnSavePost() {
+            $('#add_new_post').modal('toggle');
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+            var Files = [];
+            Files.length = 0;
+            //var dataimg = new FormData();
+            //var datavideo = new FormData();
+            //jQuery.each(jQuery('#postuploadfiles')[0].files, function (i, file) {
+            //    if (!file.type.match('image.*')) {
+            //        if (file.type.match('video.*')) {
+            //            datavideo.append("postuploadvideos", file);
+            //        }
+            //        else {
+            //            return;
+            //        }
+            //    }
+            //    else {
+            //        dataimg.append("postuploadfiles", file);
+            //    }
+            //});
+            //alert(datavideo);
+            debugger;
+            $.ajax({
+                method: "post",
+                contentType: false,
+                processData: false,
+                timeout: 0,
+                data: datavideo,
+                url: "/Club/YouTubeUploadv",
+                success: function (res) {
+                    debugger;
+                    var resData = res;
+                    if (resData != '') {
+                        //Files.push({ FileType: 2, Url: 'https://www.youtube.com/watch?v='+resData });
+                        var videos = resData;
+                        debugger
+                        var Myvideos = videos.split("--");
+                        debugger
+                        Myvideos.forEach(function (value, index, array) {
+                            if (value != '') {
+                                Files.push({ FileType: 2, Url: 'https://www.youtube.com/embed/' + value });
+                            }
+                        });
+                    }
+                    uploadimages(dataimg, Files);
+                }, error: function () {
+                    uploadimages(dataimg, Files);
+                }
+            });
+
+            debugger;
+
+        }
+
+        function uploadimages(dataimg, Files) {
+            $.ajax({
+                method: "post",
+                contentType: false,
+                processData: false,
+                data: dataimg,
+                url: "/Doctor/UploadMultipleAttachApi",
+                success: function (res) {
+                    debugger;
+                    //alert(res);
+                    var resData = res;
+                    var Images = resData; //$("#ImageNames").val();
+                    debugger
+                    var MyImages = Images.split("--");
+                    debugger
+                    MyImages.forEach(function (value, index, array) {
+                        if (value != '') {
+                            if (isUriImage(value)) {
+                                Files.push({ FileType: 1, Url: value });
+                            } else {
+                                Files.push({ FileType: 2, Url: value });
+                            }
+
+                        }
+                    });
+                    savepost(Files);
+                }, error: function () {
+
+                }
+            });
+        }
+        var isUriImage = function (uri) {
+            //make sure we remove any nasty GET params
+            uri = uri.split('?')[0];
+            //moving on, split the uri into parts that had dots before them
+            var parts = uri.split('.');
+            //get the last part ( should be the extension )
+            var extension = parts[parts.length - 1];
+            //define some image types to test against
+            var imageTypes = ['jpg', 'jpeg', 'tiff', 'png', 'gif', 'bmp', 'webp'];
+            //check if the extension matches anything in the list.
+            if (imageTypes.indexOf(extension) !== -1) {
+                return true;
+            }
+        }
+        function savepost(Files) {
+            var PostText = $("#PostText").val();
+            var PostAvailabeFor = $('#postseenstatus').data("postavailabefor");
+            //alert(PostAvailabeFor);
+            var TypeIds = []; //$('input[name="selectspecifictype"]:checked').val();
+            var FolowwerIds = [];
+            FolowwerIds.length = 0;
+            TypeIds.length = 0;
+            if (PostAvailabeFor == 3) {
+                $("#fm3 input[type=checkbox]:checked").each(function () {
+                    var followerid = $(this).data("followerid");
+                    FolowwerIds.push(followerid);
+                });
+            }
+            if (PostAvailabeFor == 4) {
+                $("#fm4 input[type=checkbox]:checked").each(function () {
+                    var typeid = $(this).val();//data("typeid");
+                    TypeIds.push(typeid);
+                });
+            }
+            var data = {
+                PostText: PostText,
+                PostAvailabeFor: PostAvailabeFor,
+                TypeIds: TypeIds,
+                FolowwerIds: FolowwerIds,
+                Files: Files
+            };
+            $.ajax({
+                cash: false,
+                method: "post",
+                url: "/Club/AddNewPost",
+                data: data,
+                success: function (result) {
+                    if (result == "1") {
+                        notifysuccess("Sent Successfully", "");
+                        //window.setTimeout(function () {
+                        //        location.reload();
+                        //    }, 50);
+                        dataimg = new FormData();
+                        datavideo = new FormData();
+                        $("#PostText").val("");
+                        $('#postuploadfiles').val('');
+                        $('#postuploadvideos').val('');
+                        $('#imagespreview').html('');
+                        document.getElementById("postseenstatus").innerText = document.getElementById('audience11').innerText;
+                        $('#postseenstatus').data("postavailabefor", 1);
+                        $('#selecaudienceclub').prop('checked', true);
+                        $("#fm3 input[type=checkbox]:checked").each(function () {
+                            $(this).prop('checked', false);
+                        });
+                        $("#fm4 input[type=checkbox]:checked").each(function () {
+                            $(this).prop('checked', false);
+                        });
+                        $("#containerdiv").html('');
+                        $("#pagenum").val(1);
+                        $("#rownum").val(3);
+                        GetPosts();
+                    }
+                    else {
+                        notifyerror("Error Occured", "");
+                    }
+                }, error: function () {
+                    notifyerror("Error Occured", "");
+                }
+            });
+        }
+
+        function createElementWithClass(elementName, className) {
+            var el = document.createElement(elementName);
+            el.className = className;
+            return el;
+        }
+        function filterFollowers(key) {
+            var data = JSON.stringify({
+                filter: key
+            });
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                cash: false,
+                url: "/Club/GetMyFollowers?filter=" + key,
+                data: data,
+                success: function (result) {
+                    debugger;
+                    if (result.status == "success") {
+                        document.getElementById('specificfollowerlist').innerHTML = '';
+                        if (result.items.length > 0) {
+                            for (var x = 0; x < result.items.length; x++) {
+                                var innerDiv = createElementWithClass('div', 'form-check select-member');
+                                var div = '<label class="form-check-label"><input class="form-check-input  mt-3" id="' + result.items[x].id + '" data-followerid="' + result.items[x].id + '" name="specificfollowerlistitem" type="checkbox"><div class="d-flex justify-content-start align-items-center mb-1"><div class="avatar mr-1"><img src="' + result.items[x].image + '" alt="avatar img" height="50" width="50"></div><div class="profile-user-info"><a href="/Club/socialprofile/' + result.items[x].id + '"><h6 class="mb-0">' + result.items[x].name + '</h6></a><small class="text-muted">' + result.items[x].type + '</small></div> </div></label>';
+                                innerDiv.innerHTML = div;
+                                document.getElementById('specificfollowerlist').appendChild(innerDiv);
+                            }
+                        } else {
+                            var key = document.getElementById("Searchkey").value;
+                            if (key == '') {
+                                document.getElementById('specificfollowerlist').innerHTML = '';
+                                return;
+                            }
+                            else {
+                                var innerDiv = createElementWithClass('div', 'form-check select-member');
+                                var div = '<h3>No Data</h3>';
+                                innerDiv.innerHTML = div;
+                                document.getElementById('specificfollowerlist').appendChild(innerDiv);
+                            }
+                        }
+                    }
+                    else {
+                        notifyerror(result.items, "");
+                    }
+
+                }, error: function () {
+                    notifyerror("Error Occured", "");
+                }
+            });
+        }
+
+        function Searchfollower(evt) {
+            var key = document.getElementById("Searchkey").value;
+            if (key == '') {
+                document.getElementById('specificfollowerlist').innerHTML = '';
+                return;
+            }
+            filterFollowers(key);
+        }
+
+        function PostChangeContent(step) {
+            if (step != 1 && step != 2) {
+                document.getElementById("postseenstatus").innerText = document.getElementById('audience' + step).innerText;
+                var postfor = step;
+                if (step == 11)
+                    postfor = 1;
+                if (step == 12)
+                    postfor = 2;
+
+                $('#postseenstatus').attr("data-postavailabefor", postfor);
+            }
+            if (step == 2) {
+                document.getElementById("audiencecontent").style.display = "block";
+                document.getElementById("createpostcontent").style.display = "none";
+                document.getElementById("specificfollowercontent").style.display = "none";
+                document.getElementById("specifictypecontent").style.display = "none";
+            }
+            else if (step == 1) {
+                document.getElementById("audiencecontent").style.display = "none";
+                document.getElementById("createpostcontent").style.display = "block";
+                document.getElementById("specificfollowercontent").style.display = "none";
+                document.getElementById("specifictypecontent").style.display = "none";
+            }
+            else if (step == 3) {
+                filterFollowers('');
+                document.getElementById("audiencecontent").style.display = "none";
+                document.getElementById("createpostcontent").style.display = "none";
+                document.getElementById("specificfollowercontent").style.display = "block";
+                document.getElementById("specifictypecontent").style.display = "none";
+            }
+            else if (step == 4) {
+                document.getElementById("audiencecontent").style.display = "none";
+                document.getElementById("createpostcontent").style.display = "none";
+                document.getElementById("specificfollowercontent").style.display = "none";
+                document.getElementById("specifictypecontent").style.display = "block";
+            }
+        }
+
+        function UnFollowUser(ClubUserid) {
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+
+            $.ajax({
+                method: "post",
+                url: "/club/UnFollowUser",
+
+                data: {
+                    ClubUserid: ClubUserid
+                },
+                success: function (res) {
+                    debugger;
+                    if (res == "success") {
+                        notifysuccess("Save", "Un Followed Successfully");
+                        $(".NotAMIFollow").attr('style', 'display:inline-block !important');
+                        $(".AMIFollow").attr('style', 'display:none !important');
+                        window.location = '/club/socialprofile/' + ClubUserid;
+                        //$(".AMIFollow").hide();
+                        //$(".NotAMIFollow").show();
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+
+            });
+        }
+        function FollowUser(ClubUserid) {
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+
+            $.ajax({
+                method: "post",
+                url: "/club/FollowUser",
+
+                data: {
+                    ClubUserid: ClubUserid
+                },
+                success: function (res) {
+                    debugger;
+                    if (res == "success") {
+                        $(".NotAMIFollow").attr('style', 'display:none !important');
+                        $(".AMIFollow").attr('style', 'display:inline-block !important');
+                        notifysuccess("Save", "Followed Successfully");
+                        window.location = '/club/socialprofile/' + ClubUserid;
+                        //$(".AMIFollow").show();
+                        //$(".NotAMIFollow").hide();
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+        function Unlikepost(postid) {
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+
+            $.ajax({
+                method: "post",
+                url: "/club/Unlikepost",
+
+                data: {
+                    postid: postid
+                },
+                success: function (res) {
+                    debugger;
+                    if (res == "success") {
+                        notifysuccess("Save", "Unliked Successfully");
+                        $("#LikeAnchor" + postid).removeClass("likeActive");
+                        $("#LikeAnchor" + postid).attr("onclick", "likepost(" + postid + ")");
+                        GetpostCount(postid, "LikeCountString");
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+        function likepost(postid) {
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+
+            $.ajax({
+                method: "post",
+                url: "/club/likepost",
+
+                data: {
+                    postid: postid
+                },
+                success: function (res) {
+                    debugger;
+                    if (res == "success") {
+                        notifysuccess("Save", "liked Successfully");
+                        $("#LikeAnchor" + postid).addClass("likeActive");
+                        $("#LikeAnchor" + postid).attr("onclick", "Unlikepost(" + postid + ")");
+                        GetpostCount(postid, "LikeCountString");
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+        function UpdateComment(Commentid, postid) {
+            if ($("#commentupdatestring").val() == '') {
+                notifyerror("Error Occured", "Update Comment");
+                return;
+            }
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+            var commentStr = $("#commentupdatestring").val();
+            var Commentid = $("#commentidfromcomment").val();
+            var postid = $("#postidfromcomment").val();
+            $.ajax({
+                method: "post",
+                url: "/club/UpdateComment",
+
+                data: {
+                    commentid: Commentid,
+                    comment: commentStr
+                },
+                success: function (res) {
+                    debugger;
+                    if (res > 0) {
+                        $('#postDataModel').modal('toggle');
+                        //GetpostCount(postid, "CommentCountString");
+                        $("#comment_string" + Commentid).html(commentStr);
+                        $("#commentupdatestring").val("");
+                        $("#commentidfromcomment").val("");
+                        $("#postidfromcomment").val("");
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+        function opendeletecommentmodel(id) {
+            $("#delete_id").val(id);
+        }
+        function opendeletepostmodel(id) {
+            $("#delete_id").val(id);
+        }
+        function openpostDataModel(commentidfromcomment, postidfromcomment) {
+            $("#commentupdatestring").val($("#comment_string" + commentidfromcomment).html());
+            $("#commentidfromcomment").val(commentidfromcomment);
+            $("#postidfromcomment").val(postidfromcomment);
+        }
+        function PostComment(postid) {
+            if ($("#label-textarea").val() == '') {
+                notifyerror("Error Occured", "Add Comment");
+                return;
+            }
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+
+            $.ajax({
+                method: "post",
+                url: "/club/PostComment",
+
+                data: {
+                    postid: postid,
+                    comment: $("#label-textarea").val()
+                },
+                success: function (res) {
+                    debugger;
+                    if (res > 0) {
+
+                        GetpostCount(postid, "CommentCountString");
+                        GetcommentById(res);
+                        $("#NoDataDivId").remove();
+                        $("#label-textarea").val("");
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+
+        function sharepost(postid) {
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+
+            $.ajax({
+                method: "post",
+                url: "/club/sharepost",
+
+                data: {
+                    postid: postid
+                },
+                success: function (res) {
+                    debugger;
+                    if (res == "success") {
+                        notifysuccess("Save", "Shared Successfully");
+
+                        $("#PostText_share").val("");
+                        document.getElementById("postseenstatus_share").innerText = document.getElementById('audience11_share').innerText;
+                        $('#postseenstatus_share').data("postavailabefor", 1);
+                        $('#selecaudienceclub_share').prop('checked', true);
+                        $("#fm3_share input[type=checkbox]:checked").each(function () {
+                            $(this).prop('checked', false);
+                        });
+                        $("#fm4_share input[type=checkbox]:checked").each(function () {
+                            $(this).prop('checked', false);
+                        });
+                        $("#containerdiv").html('');
+                        $("#pagenum").val(1);
+                        $("#rownum").val(3);
+                        GetPosts();
+                        GetpostCount(postid, "ShareCountString");
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+        function GetpostCount(postid, type) {
+            $.ajax({
+                method: "post",
+                url: "/club/GetpostCount",
+
+                data: {
+                    postid: postid,
+                    type: type
+                },
+                success: function (res) {
+                    $("#" + type + postid).html(res);
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                }
+            });
+        }
+        $(".toggle-password").click(function () {
+
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+
+        $("#add_new_post").on('shown', function () {
+            PostChangeContent(1);
+        });
+
+        $('#add_new_post').on('shown.bs.modal', function (e) {
+            PostChangeContent(1);
+        });
+
+        $(document).ready(function () {
+
+            $('.popup-video').magnificPopup({
+                type: 'iframe',
+                disableOn: 700,
+                removalDelay: 160,
+                preloader: false,
+                fixedContentPos: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+            });
+            $(".select2").each(function () {
+
+                let parent = $(this).closest("div")
+                $(".select2").select2({
+                    dropdownParent: parent
+                })
+            })
+            document.getElementById("createpostcontent").style.display = "block";
+            document.getElementById("createpostcontent_share").style.display = "block";
+            document.getElementById("edit_createpostcontent").style.display = "block";
+            //$('#fm4').keydown(function (event) {
+            //    if (event.keyCode == 13) {
+            //        event.preventDefault();
+            //        return false;
+            //    }
+            //});
+        });
+        var d = new Date();
+        var n = d.getFullYear();
+        document.getElementById("y").innerHTML = n;
+
+
+        function Subscribefunction() {
+            if ($("#Subscribeform").valid()) {
+                $("#Subscribeformbtn").prop('disabled', true);
+                $("#Subscribeformbtn").addClass("disable-click");
+                var data = $("#Subscribeform").serialize();
+                debugger;
+                $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+                $.ajax({
+                    method: "post",
+                    url: "/Home/Subscribe",
+                    data: data,
+                    success: function (res) {
+                        debugger;
+                        if (res == "success") {
+                            notifysuccess("Save", "saved successfully");
+                            window.setTimeout(function () {
+                                location.reload();
+                            }, 3000);
+
+                        }
+                        else {
+
+                            notifyerror("Error Occured", res);
+                            $("#Subscribeformbtn").prop('disabled', false);
+                            $("#Subscribeformbtn").removeClass("disable-click");
+                        }
+                    }, error: function () {
+
+                        notifyerror("Error Occured", "Error Occured");
+                        $("#Subscribeformbtn").prop('disabled', false);
+                        $("#Subscribeformbtn").removeClass("disable-click");
+                    }
+
+                });
+            }
+        }
+    </script>
+<script>
+        function LangChange(thisval) {
+            window.location = '/Home/SetCultureCookie?cltr=' + $(thisval).val();
+        }
+        $(function () {
+            $('.selectpicker').selectpicker();
+        });
+    </script>
+<script>
+        var sliderRowIndex = 0;
+        var time = 6
+        var $circle,
+            $sliderRow,
+            $actionContent,
+            $actionImages,
+            $pausePlay,
+            $dots,
+            isPause,
+            tick,
+            percentTime
+
+        $sliderRow = $('.slider-row')
+
+        $sliderRow.each(function () {
+            sliderRowIndex++
+
+            $(this).attr('slider-row', sliderRowIndex)
+
+            $actionImages = $('.action-slider', this)
+            $actionContent = $('.action-content-slider', this)
+            $pausePlay = $('.pause-play', this)
+            $dots = $('.slick-dots button', this)
+            $circle = $('circle.progress', this)
+            $('.action-slider').attr('dir', 'rtl');
+            $('.action-content-slider').attr('dir', 'rtl');
+            $actionImages.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                infinite: true,
+                arrows: false,
+
+                fade: true
+
+            })
+
+            $actionContent.slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                infinite: true,
+                fade: true,
+                speed: 1000,
+                asNavFor: $actionImages
+            })
+
+            function startProgressbar() {
+                resetProgressbar()
+                percentTime = 0
+                isPause = false
+                tick = setInterval(interval, 10);
+            }
+
+            function interval() {
+                if (isPause === false) {
+                    percentTime += 1 / (time + 0.1);
+                    $circle.css({
+                        'stroke-dashoffset': percentTime
+                    });
+                    if (percentTime >= 156) {
+                        $actionContent.slick('slickNext');
+                        startProgressbar();
+                    }
+                }
+            }
+
+            $pausePlay.on('click', function () {
+                if ($(this).attr('data-click-state') == 1) {
+                    $(this).attr('data-click-state', 0)
+                    isPause = false
+                } else {
+                    $(this).attr('data-click-state', 1)
+                    isPause = true
+                    console.log(sliderRowIndex)
+                }
+            });
+
+            $dots.click(function () {
+                startProgressbar();
+            });
+
+            function resetProgressbar() {
+                $circle.css({
+                    'stroke-dashoffset': 0
+                });
+                clearTimeout(tick);
+            }
+
+            startProgressbar();
+
+        })
+
+
+        function notifyerror(title, message) {
+            Command: toastr["error"](message, title)
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": "toast-top-left",
+                "onclick": null,
+                "showDuration": "1000",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+
+            }
+        }
+        function notifysuccess(title, message) {
+            Command: toastr["success"](message, title)
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": "toast-top-left",
+                "onclick": null,
+                "showDuration": "1000",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+
+            }
+        }
+
+        function notifyerror(title, message) {
+            Command: toastr["error"](message, title)
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "positionClass": "toast-top-left",
+                "onclick": null,
+                "showDuration": "1000",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+
+            }
+        }
+    </script>
+
+<script>
+        jQuery(document).ready(function () {
+            ImgUpload();
+        });
+
+        function ImgUpload() {
+            var imgWrap = "";
+            var imgArray = [];
+
+            $('.upload__inputfile').each(function () {
+                $(this).on('change', function (e) {
+                    imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+                    var maxLength = $(this).attr('data-max_length');
+
+                    var files = e.target.files;
+                    var filesArr = Array.prototype.slice.call(files);
+                    var iterator = 0;
+                    filesArr.forEach(function (f, index) {
+
+                        if (!f.type.match('image.*') && !f.type.match('video.*')) {
+                            return;
+                        }
+
+                        if (imgArray.length > maxLength) {
+                            return false
+                        } else {
+                            var len = 0;
+                            for (var i = 0; i < imgArray.length; i++) {
+                                if (imgArray[i] !== undefined) {
+                                    len++;
+                                }
+                            }
+                            if (len > maxLength) {
+                                return false;
+                            } else {
+                                imgArray.push(f);
+                                if (f.type.match('video.*')) {
+                                    var source = document.createElement('video');
+                                    //source.width = 110;
+                                    //source.height = 110;
+                                    //source.controls = true;
+                                    //source.src = URL.createObjectURL(files[i]);
+                                    var html = "<div class='upload__img-box'><div class='img-bg'><video width='110' height='110' controls='true' src='" + URL.createObjectURL(files[index]) + "'></video><div class='upload__img-close'></div></div></div>";
+                                    imgWrap.append(html);
+                                    //$(f.name).append(source);
+                                    iterator++;
+                                    //document.body.appendChild(source);
+                                }
+                                else {
+                                    var reader = new FileReader();
+                                    reader.onload = function (e) {
+                                        var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                                        imgWrap.append(html);
+                                        iterator++;
+                                    }
+                                    reader.readAsDataURL(f);
+                                }
+                            }
+                        }
+                    });
+                });
+            });
+
+            $('body').on('click', ".upload__img-close", function (e) {
+                var file = $(this).parent().data("file");
+                for (var i = 0; i < imgArray.length; i++) {
+                    if (imgArray[i].name === file) {
+                        imgArray.splice(i, 1);
+                        break;
+                    }
+                }
+                $(this).parent().parent().remove();
+            });
+
+        }
+    </script>
+<script>
+        function SpecialityChange() {
+
+            var Id = $("#MainSpecialityID").val();
+            $('#subSpecialityDiv').load("/patient/SubSpeciality", { Id: Id });
+            $('#MedicalServiceDiv').load("/patient/MedicalServiceDDl", { Id: Id });
+        };
+        $(".ar-input").on("keypress", function (event) {
+            var englishAlphabet = /^[A-Za-z]*$/;
+            //var arabicAlphabet = /[\u0600-\u06ff]|[\u0621-\u064A0-9 ]|[\u0750-\u077f]|[\ufb50-\ufc3f]|[\ufe70-\ufefc]|[\u0200]|[\u00A0]/g;
+            var key = String.fromCharCode(event.which);
+            // For the keyCodes, look here: http://stackoverflow.com/a/3781360/114029
+            // keyCode == 8  is backspace
+            // keyCode == 32  is space
+            // keyCode == 37 is left arrow
+            // keyCode == 39 is right arrow
+            // if (event.keyCode == 8 || event.keyCode == 32 | event.keyCode == 37 || event.keyCode == 39 || arabicAlphabet.test(key)) {
+            if (!englishAlphabet.test(key)) {
+                return true;
+            } return false;
+        });
+
+        $('.ar-input').on("paste", function (e) {
+            e.preventDefault();
+        });
+        $(".en-input").on("keypress", function (event) {
+
+            //var englishAlphabet = /^[A-Za-z0-9]*$/;
+            var arabicAlphabet = /[\u0600-\u06ff]|[\u0750-\u077f]|[\ufb50-\ufc3f]|[\ufe70-\ufefc]|[\u0200]|[\u00A0]/g;
+
+            var key = String.fromCharCode(event.which);
+            if (!arabicAlphabet.test(key)) {
+                return true;
+            } return false;
+        });
+
+        $('.en-input').on("paste", function (e) {
+            e.preventDefault();
+        });
+
+
+    </script>
+<script>
+
+
+        function FnSavePost_share() {
+            $('#add_new_post_share').modal('toggle');
+            $(document).ajaxStart($.blockUI({ message: '<h1 class="margintop8"><img src="/frontassets/update_logo.png" /><img src="/frontassets/global/img/loading.gif" /></h1>', css: { width: '130px' } })).ajaxStop($.unblockUI);
+            var postid = $("#sharedpostid").val();
+            var PostText = $("#PostText_share").val();
+            var PostAvailabeFor = $('#postseenstatus_share').data("postavailabefor");
+            var TypeIds = [];
+            var FolowwerIds = [];
+            FolowwerIds.length = 0;
+            TypeIds.length = 0;
+            if (PostAvailabeFor == 3) {
+                $("#fm3_share input[type=checkbox]:checked").each(function () {
+                    var followerid = $(this).data("followerid");
+                    FolowwerIds.push(followerid);
+                });
+            }
+            if (PostAvailabeFor == 4) {
+                $("#fm4_share input[type=checkbox]:checked").each(function () {
+                    var typeid = $(this).val();
+                    TypeIds.push(typeid);
+                });
+            }
+            //var data ={
+            //    PostText: PostText,
+            //    PostAvailabeFor: PostAvailabeFor,
+            //    TypeIds: TypeIds,
+            //    FolowwerIds: FolowwerIds,
+            //    Files:Files
+            //};
+            $.ajax({
+                method: "post",
+                url: "/club/sharepost",
+
+                data: {
+                    postid: postid,
+                    PostText: PostText,
+                    PostAvailabeFor: PostAvailabeFor,
+                    TypeIds: TypeIds,
+                    FolowwerIds: FolowwerIds
+                },
+                success: function (res) {
+                    debugger;
+                    if (res == "success") {
+                        notifysuccess("Save", "Shared Successfully");
+                        GetpostCount(postid, "ShareCountString");
+                        Clearsharepostcontent();
+                    }
+                    else {
+                        notifyerror("Error Occured", res);
+                        Clearsharepostcontent();
+                    }
+                }, error: function () {
+
+                    notifyerror("Save", "Error Occured  ");
+                    Clearsharepostcontent();
+                }
+            });
+        }
+
+
+        function Clearsharepostcontent() {
+
+            $("#PostText_share").val("");
+            document.getElementById("postseenstatus_share").innerText = document.getElementById('audience11_share').innerText;
+            $('#postseenstatus_share').data("postavailabefor", 1);
+            $('#selecaudienceclub_share').prop('checked', true);
+            $("#fm3_share input[type=checkbox]:checked").each(function () {
+                $(this).prop('checked', false);
+            });
+            $("#fm4_share input[type=checkbox]:checked").each(function () {
+                $(this).prop('checked', false);
+            });
+            $("#containerdiv").html('');
+            $("#pagenum").val(1);
+            $("#rownum").val(3);
+            $("#sharedpostid").val(0);
+            GetPosts();
+        }
+
+        function createElementWithClass(elementName, className) {
+            var el = document.createElement(elementName);
+            el.className = className;
+            return el;
+        }
+        function filterFollowers_share(key) {
+            var data = JSON.stringify({
+                filter: key
+            });
+            $.ajax({
+                contentType: 'application/json; charset=utf-8',
+                dataType: 'json',
+                cash: false,
+                url: "/Club/GetMyFollowers?filter=" + key,
+                data: data,
+                success: function (result) {
+                    debugger;
+                    if (result.status == "success") {
+                        document.getElementById('specificfollowerlist_share').innerHTML = '';
+                        if (result.items.length > 0) {
+                            for (var x = 0; x < result.items.length; x++) {
+                                var innerDiv = createElementWithClass('div', 'form-check select-member');
+                                var div = '<label class="form-check-label"><input class="form-check-input  mt-3" id="' + result.items[x].id + '" data-followerid="' + result.items[x].id + '" name="specificfollowerlistitem" type="checkbox"><div class="d-flex justify-content-start align-items-center mb-1"><div class="avatar mr-1"><img src="' + result.items[x].image + '" alt="avatar img" height="50" width="50"></div><div class="profile-user-info"><a href="/Club/socialprofile/' + result.items[x].id + '"><h6 class="mb-0">' + result.items[x].name + '</h6></a><small class="text-muted">' + result.items[x].type + '</small></div> </div></label>';
+                                innerDiv.innerHTML = div;
+                                document.getElementById('specificfollowerlist_share').appendChild(innerDiv);
+                            }
+                        } else {
+                            var key = document.getElementById("Searchkey_share").value;
+                            if (key == '') {
+                                document.getElementById('specificfollowerlist_share').innerHTML = '';
+                                return;
+                            } else {
+                                var innerDiv = createElementWithClass('div', 'form-check select-member');
+                                var div = '<h3>No Data</h3>';
+                                innerDiv.innerHTML = div;
+                                document.getElementById('specificfollowerlist_share').appendChild(innerDiv);
+                            }
+                        }
+                    }
+                    else {
+                        notifyerror(result.items, "");
+                    }
+
+                }, error: function () {
+                    notifyerror("Error Occured", "");
+                }
+            });
+        }
+
+        function Searchfollower_share(evt) {
+            var key = document.getElementById("Searchkey_share").value;
+            if (key == '') {
+                document.getElementById('specificfollowerlist_share').innerHTML = '';
+                return;
+            }
+            filterFollowers_share(key);
+        }
+
+        function PostChangeContent_share(step) {
+            if (step != 1 && step != 2) {
+                document.getElementById("postseenstatus_share").innerText = document.getElementById('audience' + step + '_share').innerText;
+                var postfor = step;
+                if (step == 11)
+                    postfor = 1;
+                if (step == 12)
+                    postfor = 2;
+
+                $('#postseenstatus_share').attr("data-postavailabefor", postfor);
+            }
+            if (step == 2) {
+                document.getElementById("audiencecontent_share").style.display = "block";
+                document.getElementById("createpostcontent_share").style.display = "none";
+                document.getElementById("specificfollowercontent_share").style.display = "none";
+                document.getElementById("specifictypecontent_share").style.display = "none";
+            }
+            else if (step == 1) {
+                document.getElementById("audiencecontent_share").style.display = "none";
+                document.getElementById("createpostcontent_share").style.display = "block";
+                document.getElementById("specificfollowercontent_share").style.display = "none";
+                document.getElementById("specifictypecontent_share").style.display = "none";
+            }
+            else if (step == 3) {
+                filterFollowers_share('');
+                document.getElementById("audiencecontent_share").style.display = "none";
+                document.getElementById("createpostcontent_share").style.display = "none";
+                document.getElementById("specificfollowercontent_share").style.display = "block";
+                document.getElementById("specifictypecontent_share").style.display = "none";
+            }
+            else if (step == 4) {
+                document.getElementById("audiencecontent_share").style.display = "none";
+                document.getElementById("createpostcontent_share").style.display = "none";
+                document.getElementById("specificfollowercontent_share").style.display = "none";
+                document.getElementById("specifictypecontent_share").style.display = "block";
+            }
+        }
+
+
+    </script>
+<script>
+        $("#new-consultation-doctor-profile").on('shown', function () {
+            //$('#imagespreview').html('');
+            document.getElementById('new-consultation-doctor-profile').getElementsByClassName("upload__img-wrap")[0].innerHTML = '';
+        });
+
+        $('#new-consultation-doctor-profile').on('shown.bs.modal', function (e) {
+            document.getElementById('new-consultation-doctor-profile').getElementsByClassName("upload__img-wrap")[0].innerHTML = '';
+        });
+    </script>
+
+
+<script src='../../www.gstatic.com/firebasejs/8.3.1/firebase-app.js' type="text/javascript"></script>
+<script src='../../www.gstatic.com/firebasejs/8.3.1/firebase-messaging.js' type="text/javascript"></script>
+
+<script src="../../www.gstatic.com/firebasejs/8.3.1/firebase-auth.js"></script>
+<script src="../../www.gstatic.com/firebasejs/8.3.1/firebase-firestore.js"></script>
+<script src="../../www.gstatic.com/firebasejs/8.3.1/firebase-analytics.js"></script>
+<script>
+
+            $(function () {
+
+                var token = null;
+                // Your web app's Firebase configuration
+                // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                var firebaseConfig = {
+                    apiKey: "AIzaSyB0hLaCVZmL5wE_TdSa-HpUgyEicjEa6no",
+                    authDomain: "e4clinic-bec33.firebaseapp.com",
+                    projectId: "e4clinic-bec33",
+                    storageBucket: "e4clinic-bec33.appspot.com",
+                    messagingSenderId: "107293504862",
+                    appId: "1:107293504862:web:3b24c809b48d5824a58bcf",
+                    measurementId: "G-YHG6GCYDJM"
+                };
+                // Initialize Firebase
+                firebase.initializeApp(firebaseConfig);
+                firebase.analytics();
+
+                const messaging = firebase.messaging();
+
+                messaging.requestPermission()
+                    .then(function () {
+                        console.log("granted");
+                        return messaging.getToken();
+                        //if (isTokenSentToServer()) {
+                        //    console.log("already granted");
+                        //    getRegtoken();
+                        //} else {
+                        //    getRegtoken();
+                        //}
+                    }).then(function (currentToken) {
+                        if (currentToken) {
+                            console.log(currentToken);
+                            $("#Device_token").val(currentToken);
+                        }
+
+                    });
+
+                messaging.onMessage((payload) => {
+                    console.log('Message received. ', payload);
+                    notificationTitle = payload.data.title;
+                    notificationOptions = {
+                        body: payload.data.NotificationMessage,
+                        icon: "/frontassets/img/specialities/specialities-02.png"
+                    };
+                    var audio = new Audio("../frontassets/goes-without-saying-608.ogg");
+                    audio.play();
+                    var notification = new Notification(notificationTitle, notificationOptions);
+                    // ...
+                });
+
+                //function getRegtoken() {
+
+                //    messaging.getToken().then((currentToken) => {
+                //        if (currentToken) {
+                //            console.log(currentToken);
+                //            setTokenSentToServer(true);
+                //            //saveToken(currentToken)
+                //            //   updateUIForPushEnabled(currentToken);
+                //        } else {
+                //            console.log('No Instance ID token available. Request permission to generate one.');
+                //            setTokenSentToServer(false);
+                //        }
+                //    }).catch((err) => {
+                //        console.log('An error occurred while retrieving token. ', err);
+                //        setTokenSentToServer(false);
+                //    });
+
+                //}
+                //function setTokenSentToServer(sent) {
+                //    window.localStorage.setItem('sentToServer', sent ? 1 : 0);
+                //}
+                //function isTokenSentToServer() {
+                //    return window.localStorage.getItem('sentToServer') === '1';
+                //}
+                //firebase.messaging().onMessage(notification => {
+                //    alert('Notification received!', notification);
+                //});
+                //messaging.onMessage(function (payload) {
+                //    console.log('Message received. ', payload);
+                //    debugger;
+                //    alert(payload.notification.title);
+                //    notificationTitle = payload.notification.title;
+                //    notificationOptions = {
+                //        body: payload.notification.body,
+                //        icon: payload.notification.icon
+                //    };
+
+                //    var notification = new Notification(notificationTitle, notificationOptions);
+
+                //});
+
+            });
+
+
+        </script>
+<script>
+            $(document).ready(function () {
+                // css barcode w/ js
+                // by rexfeng 2012
+
+                $('#result').hide(); // set initially hidden
+                $('#red-strike').hide(); // set initially hidden
+
+                $('input[name=barcodenum]').keyup(function () {
+                    var bcnum = $('input[name=barcodenum]').val();
+                    var intcheck = /^\d+$/; // regex only 0-9
+
+                    if ((intcheck.test(bcnum)) && (bcnum.length == 11)) {
+
+                        // update graphics for first 11
+                        var elements = ['l1', 'l2', 'l3', 'l4', 'l5', 'l6', 'r1', 'r2', 'r3', 'r4', 'r5'];
+
+                        jQuery.each(elements, function (i, val) {
+                            var code_update = bcnum.substring(i, i + 1);
+                            var bcx = eval("bc".concat(code_update));
+                            $("#" + this).html(bcx);
+                        });
+
+                        // calculate last digit and update
+
+                        var bcdigits = bcnum.split('');
+
+                        var checksum_s1 = 0; //init odd holder
+                        var checksum_s2 = 0; //init even holder
+
+                        jQuery.each(bcdigits, function (i, val) {
+                            if (i % 2 == 0) {
+                                checksum_s1 += parseInt(val);
+                            } else {
+                                checksum_s2 += parseInt(val);
+                            }
+                        });
+
+                        var checksum_s3 = checksum_s1 * 3 + checksum_s2;
+
+                        var s3_string = checksum_s3.toString();
+                        var s3_last = s3_string.substring(s3_string.length - 1);
+
+                        if (s3_last == "0") {
+                            $("#r6").html(bc0);
+                            var diff = 0;
+                        } else {
+                            var diff = 10 - parseInt(s3_last);
+                            var diff_bc = eval("bc".concat(diff));
+                            $("#r6").html(diff_bc);
+                        };
+
+                        // update digits displayed
+                        // by rexfeng 2012
+                        $('#l-digits').text(bcnum.slice(1, 6));
+                        $('#r-digits').text(bcnum.slice(6, 11));
+
+                        // toggle hidden fields
+                        $('#red-strike').hide(); // set hidden
+                        $("#entered_bc").text(bcnum);
+                        $("#calc_check").text(diff);
+                        $("#all_digits").text(bcnum + diff);
+                        $('#result').show();
+
+                    } else {
+
+                        // error msg
+                        $('#l-digits').text("Enter digits");
+                        $('#r-digits').text("");
+                        $('#red-strike').show();
+                        $('#result').hide();
+                    }
+                });
+
+                // define barcode graphics
+                var bc0 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc1 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc2 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc3 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc4 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc5 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc6 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc7 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc8 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+                var bc9 = "<div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m o\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\"><\/div><div \
+                                                                                                                                                                                                                             class=\"m e\">\
+                                                                                                                                                                                                                             <\/div>";
+
+            });
+        </script>
+<script>
+            function htmlEncode(value) {
+                return $('<div/>').text(value).html();
+            }
+
+            $(function () {
+                $("#generate").click(function () {
+                    $(".qr-code").attr("src", "https://chart.googleapis.com/chart?cht=qr&chl=" + htmlEncode($("#content").val()) + "&chs=160x160&chld=L|0");
+                });
+            });
+        </script>
+</body>
+
+<!-- Mirrored from rubikcare.com/Home/MedicineDetails?MedicineId=252 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Sep 2022 13:50:22 GMT -->
+</html>
