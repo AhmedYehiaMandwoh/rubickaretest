@@ -681,7 +681,7 @@ label{
         }
 
         .logo img {
-            width: 40px !important;
+            width: 150px !important;
         }
 
         a .cart {
@@ -976,9 +976,7 @@ label{
             font-size: 11px;
         }
 
-        .navbar-brand.logo img {
-            height: 28px;
-        }
+   
         .doctors-area .navbar-header a.navbar-brand.logo {
             margin-left: -4px !important;
         }
