@@ -1,0 +1,26 @@
+.section-specialities .owl-carousel .owl-item img{
+    width: 100%;
+    height: auto;
+}
+.section-specialities .owl-theme .owl-dots .owl-dot span{
+    border-radius: 30px !important;
+}
+
+
+.owl-theme .owl-dots .owl-dot span, .owl-theme .owl-dots .owl-dot:hover span {
+    border: 2px solid #1277d1;
+}
+.owl-theme .owl-dots .owl-dot span {
+    background: #fff !important;
+    opacity: 0.6;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #1277d1 !important;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+
+}
+.main-menu-wrapper {
+    margin-right: 26%;
+    margin-left: 0;
+}
